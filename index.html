@@ -30,10 +30,12 @@
                 "gray": "rgb(18, 18, 18)",
                 "red": "#F85559",
                 "light-gray": "rgba(18, 18, 18, 0.10)",
-                "semi-gray": "rgba(18, 18, 18, 0.60)"
+                "semi-gray": "rgba(18, 18, 18, 0.60)",
+                "overlay-bg": "rgba(18, 18, 18, 0.70)"
               },
               backgroundImage:{
-                "gradient": "linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)"
+                "gradient": "linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)",
+                "image-bg": "url('images/team.png')"
               },
               fontFamily:{
                 "font-lato": "'Lato', sans-serif;"
@@ -206,16 +208,16 @@
             <!-- time -->
            <div class="flex-1 flex w-[300px] lg:max-w-sm  justify-between text-center">
             <div class="">
-              <h3 class="text-dark text-xl lg:text-4xl font-extrabold after:content-['⁞'] after:pl-8 after:text-2xl align-text-top">29</h3>
-              <p class="text-xs lg:text-sm m-2 text-start ">Days</p>
+              <h3 class="text-dark text-xl lg:text-4xl font-extrabold after:content-['⁞'] after:pl-8 lg:after:text-2xl after:text-xl align-text-top">29</h3>
+              <p class="text-xs lg:text-sm ml-0 mt-2  lg:m-2 text-start ">Days</p>
             </div>
             <div>
-              <h3 class="text-dark text-xl lg:text-4xl font-extrabold after:content-['⁞'] after:pl-8 after:text-2xl align-text-top">15</h3>
-              <p class="text-xs lg:text-sm mt-2 text-start">Hours</p>
+              <h3 class="text-dark text-xl lg:text-4xl font-extrabold after:content-['⁞'] after:pl-8 lg:after:text-2xl after:text-xl align-text-top">15</h3>
+              <p class="text-xs lg:text-sm ml-0 mt-2  lg:m-2 text-start">Hours</p>
             </div>
             <div>
-              <h3 class="text-dark text-xl lg:text-4xl font-extrabold after:content-['⁞'] after:pl-8 after:text-2xl align-text-top">25</h3>
-              <p class="text-xs lg:text-sm mt-2 text-start">Minutes</p>
+              <h3 class="text-dark text-xl lg:text-4xl font-extrabold after:content-['⁞'] after:pl-8 lg:after:text-2xl after:text-xl align-text-top">25</h3>
+              <p class="text-xs lg:text-sm ml-0 mt-2  lg:m-2 text-start">Minutes</p>
             </div>
             <div>
               <h3 class="text-dark text-xl lg:text-4xl font-extrabold">08</h3>
@@ -413,14 +415,119 @@
         <!-- Team Section -->
         <section>
           <!-- Team Heading -->
-          <div class="flex  justify-center items-center bg-gradient rounded-lg absolute w-full h-full z-10 ">
-            <div class="max-w-[660px] text-white text-center">
-            <h1 class="text-2xl lg:text-6xl font-extrabold mb-1">Meet the team section</h1>
-            <p class="text-sm lg:text-xl font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            <button class="bg-red py-1 lg:py-4 px-2 lg:px-6 text-xs lg:text-xl font-extrabold rounded-lg mt-4">Shop Now</button>
+          <div class="hero min-h-screen bg-image-bg">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div>
+                <div class="max-w-xl mx-auto text-white">
+                  <h1 class="lg:mb-5 mb-2 text-2xl lg:text-5xl font-extrabold ">Meet the team section</h1>
+                  <p class="mb-5 text-sm lg:text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!--Team card container -->
+                <div class="grid lg:grid-cols-4 md:grid-cols-2">
+                  <!-- card 1 -->
+                  <div class="card  bg-transparent ">
+                    <figure class="px-10 pt-10 -mb-4">
+                      <img src="images/member1.png" alt="member1" class="rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Awlad Hossain</h2>
+                      <p class="-mt-2">Fruits Expert</p>
+                      <div class="card-actions">
+                        <a href=""><i class="fa-brands fa-facebook-f bg-red py-1 px-2 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter bg-red py-1 px-1 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in bg-red py-1 px-[6px] rounded-full"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div class="card  bg-transparent ">
+                    <figure class="px-10 pt-10 -mb-4">
+                      <img src="images/member2.png" alt="member1" class="rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Safia Chowdhury</h2>
+                      <p class="-mt-2">Fruits Expert</p>
+                      <div class="card-actions">
+                        <a href=""><i class="fa-brands fa-facebook-f bg-red py-1 px-2 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter bg-red py-1 px-1 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in bg-red py-1 px-[6px] rounded-full"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div class="card  bg-transparent ">
+                    <figure class="px-10 pt-10 -mb-4">
+                      <img src="images/member3.png" alt="member1" class="rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rokib Hossain</h2>
+                      <p class="-mt-2">Fruits Expert</p>
+                      <div class="card-actions">
+                        <a href=""><i class="fa-brands fa-facebook-f bg-red py-1 px-2 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter bg-red py-1 px-1 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in bg-red py-1 px-[6px] rounded-full"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 4 -->
+                  <div class="card  bg-transparent shadow-xl">
+                    <figure class="px-10 pt-10 -mb-4">
+                      <img src="images/member4.png" alt="member1" class="rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Chaity</h2>
+                      <p class="-mt-2">Fruits Expert</p>
+                      <div class="card-actions">
+                        <a href=""><i class="fa-brands fa-facebook-f bg-red py-1 px-2 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter bg-red py-1 px-1 rounded-full"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in bg-red py-1 px-[6px] rounded-full"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          
           </div>
-      </div>
         </section>
+
+        <!-- why choose section -->
+        <section class="my-20">
+            <!-- heading -->
+          <div class="max-w-xl mx-auto text-center">
+            <h1 class="lg:mb-5 mb-2 text-2xl lg:text-5xl font-extrabold text-dark ">Why Choose Us</h1>
+            <p class="mb-5 text-sm lg:text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+
+          <!-- choose container -->
+          <div>
+            <!-- left -->
+            <div class="">
+              <div class="flex">
+                <i class="fa-solid fa-users text-2xl"></i>
+                <div class="ml-5">
+                  <h4 class="text-2xl text-dark font-extrabold">Dedicated Team</h4>
+                  <hr>
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <!-- center -->
+            <div>
+
+            </div>
+            <!-- right -->
+
+          </div>
+
+        </section>
+
       </main>
       <footer></footer>
    </body>
